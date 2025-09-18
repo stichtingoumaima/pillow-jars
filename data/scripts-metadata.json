@@ -1833,29 +1833,6 @@
         "assets": []
       }
     },
-    {
-      "name": "Guester",
-      "description": "180+ quests & diaries. Ironman: No items & gold needed. New quests added regularly. 100% In-Progress support, quest-queuing, GCombat logic.",
-      "version": 38.43,
-      "author": "GZero",
-      "imageUrl": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guester/3.40/f194dbb56c0fc996ab74e164.png",
-      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29141-guester-by-gscripts-150-quests-diaries-150-ironman-quest-diaries-ironman-aio-in-progress-support-quest-queuing-quester/://:testy_guesty",
-      "storeId": 742,
-      "scriptId": 1735,
-      "jarFile": "jars/Guester.jar",
-      "optionFile": "options/Guester.txt",
-      "botVersion": "3.40",
-      "contributor": "Hydro",
-      "downloads": {
-        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/Guester/3.40/guester%2018%2009.7z"
-      },
-      "files": [
-        {
-          "name": "guester 18 09.7z",
-          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/Guester/3.40/guester%2018%2009.7z"
-        }
-      ]
-    }
   ],
   "lastUpdated": "2025-09-18T17:36:24.584Z"
 }
