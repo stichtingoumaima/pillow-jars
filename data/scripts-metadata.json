@@ -1,7 +1,1840 @@
 {
   "scripts": [
     {
+      "name": "aio-gauntlet",
+      "description": "Completes Corrupted and Crystalline Gauntlet efficiently. Easy configuration. Rewards up to 160m gp.",
+      "version": 1.88,
+      "author": "Hashtag",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31629-%E2%9D%A4%EF%B8%8F-aio-gauntlet-%E2%9D%A4%EF%B8%8F-corrupted-crystalline-5-to-1-vengeance-efficient-configurable/",
+      "storeId": 916,
+      "scriptId": 0.7557851099631803,
+      "jarFile": "jars/_AIO_Gauntlet.jar",
+      "optionFile": "options/_AIO_Gauntlet.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "_AIO_Gauntlet.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/%23%20AIO%20Gauntlet/3.37/_AIO_Gauntlet.json"
+        },
+        {
+          "name": "aio-gauntlet-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-gauntlet/3.37/aio-gauntlet-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-gauntlet/3.37/aio-gauntlet-14-09.7z"
+      }
+    },
+    {
+      "name": "aio-money-making",
+      "description": "Lifetime access to AIO Money Making with multiple money making scripts. These methods have very low requirements and yield lots of gp! Future methods free of charge.",
+      "version": 3.72,
+      "author": "Hashtag",
+      "imageUrl": "https://i.redd.it/423roigblg171.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/22511-db3-aio-money-making-active-support-5-money-making-scripts-future-scripts-included/",
+      "storeId": 453,
+      "scriptId": 0.027584090443203646,
+      "jarFile": "jars/_AIO_Money_Making.jar",
+      "optionFile": "options/_AIO_Money_Making.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "_AIO_Money_Making.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/%23%20AIO%20Money%20Making/3.39/_AIO_Money_Making.json"
+        },
+        {
+          "name": "hashaiomoney-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-money-making/3.39/hashaiomoney-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-money-making/3.39/hashaiomoney-16-09.7z"
+      }
+    },
+    {
+      "name": "blast-furnace",
+      "description": "Optimized for efficiency! Supports Grand Exchange restocking, switching between Ice & Gold gloves, Coal bag and stamina potions.",
+      "version": 1.88,
+      "author": "Hashtag",
+      "imageUrl": "https://preview.redd.it/blast-furnace-2410-x-1356-by-hansel-adams-v0-v98rwrkxtxhb1.jpg?width=640&crop=smart&auto=webp&s=9acd2465aba2da205aba62d1c109c1e6e6738819",
+      "threadUrl": "https://dreambot.org/forums/index.php/topic/7353-1-blast-furnace-low-req-up-to-1m-gphour-potions-coal-bag/",
+      "storeId": 825,
+      "scriptId": 0.3179693925538922,
+      "jarFile": "jars/_Blast_Furnace.jar",
+      "optionFile": "options/_Blast_Furnace.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "_Blast_Furnace.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/%23%20Blast%20Furnace/3.39/_Blast_Furnace.json"
+        },
+        {
+          "name": "hashblast-furnace-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/blast-furnace/3.39/hashblast-furnace-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/blast-furnace/3.39/hashblast-furnace-16-09.7z"
+      }
+    },
+    {
+      "name": "sorceress-garden",
+      "description": "All 4 gardens. Supports 1 click Summer garden. Pick fruits or herbs. Stamina potions.",
+      "version": 1.88,
+      "author": "Hashtag",
+      "imageUrl": "https://i.ytimg.com/vi/t5vsCLIN7oM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCwILpHNFFw2ZQwwS6irosbFnHxcA",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/27559-%E2%9D%A4%EF%B8%8F-sorceress-garden-%E2%9D%A4%EF%B8%8F-1-click-summer-garden-all-4-gardens-fruit-or-herbs-thieving-experience/",
+      "storeId": 616,
+      "scriptId": 0.03292266932115617,
+      "jarFile": "jars/_Sorceress_Garden.jar",
+      "optionFile": "options/_Sorceress_Garden.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "_Sorceress_Garden.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/%23%20Sorceress%20Garden/3.39/_Sorceress_Garden.json"
+        },
+        {
+          "name": "hashsorcgarden-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/sorceress-garden/3.39/hashsorcgarden-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/sorceress-garden/3.39/hashsorcgarden-16-09.7z"
+      }
+    },
+    {
+      "name": "Bento Nex",
+      "description": "4-12m gp/hr. Mass AND team instance support. Parallelized restocking and team communication for max efficiency. Ironman support. Consistent nex kills with advanced strategies and minimal budget gear and stats.",
+      "version": 1,
+      "author": "bento",
+      "imageUrl": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Nex/3.30.37/lhh4y4x7a1151.png",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31955-bento-nex-full-auto-nex-mass-and-private-teams-extreme-budget-low-requirement-setups-4-12mhr-completes-frozen-door-efficient-auto-team-management-and-coordination/://:Bento Nex",
+      "storeId": 937,
+      "scriptId": 0.8291550340513967,
+      "jarFile": "jars/Bento_Nex.jar",
+      "optionFile": "options/Bento_Nex.txt",
+      "botVersion": "3.30.37",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Bento_Nex.jar",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Nex/3.30.37/Bento_Nex.jar"
+        },
+        {
+          "name": "Bento_Nex.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Nex/3.30.37/Bento_Nex.json"
+        },
+        {
+          "name": "Bento_Nex.txt",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Nex/3.30.37/Bento_Nex.txt"
+        },
+        {
+          "name": "lhh4y4x7a1151.png",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Nex/3.30.37/lhh4y4x7a1151.png"
+        }
+      ],
+      "downloads": {
+        "jar": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.jar",
+        "txt": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.txt",
+        "json": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.json",
+        "fallbackUrls": {
+          "jar": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.jar",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Bento-Nex-v1/Bento-Nex.jar",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Bento-Nex-v1/Bento-Nex.jar"
+          },
+          "txt": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.txt",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Bento-Nex-v1/Bento-Nex.txt",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Bento-Nex-v1/Bento-Nex.txt"
+          },
+          "json": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Bento-Nex-v1/Bento-Nex.json",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Bento-Nex-v1/Bento-Nex.json",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Bento-Nex-v1/Bento-Nex.json"
+          }
+        }
+      },
+      "githubRelease": {
+        "tagName": "Bento-Nex-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Bento-Nex-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "bento-toa",
+      "description": "7-15m gp/hr. Just press start, full auto TOA with no setup or prior knowledge needed. Ironman support. 530+ invocation raids with minimum budget gear.  Automatic gear and invocation determination, with manual customization available. Advanced raid mechanics based on most recent metas and strategies. Automatic raid upscaling and downscaling based on individual bot performance coming soon",
+      "version": 1,
+      "author": "bento",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDcnYdSZen0pmMIBMgOvOG8DNSZl-aD3UnQ&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30831-bento-toa-full-auto-toa-extreme-budget-low-requirement-setups-7-15mhr-automatic-or-manual-invocationgear-setups/://:Bento Toa",
+      "storeId": 860,
+      "scriptId": 0.8442138452957659,
+      "jarFile": "jars/Bento_Toa.jar",
+      "optionFile": "options/Bento_Toa.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Bento_Toa.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Bento%20Toa/3.37/Bento_Toa.json"
+        },
+        {
+          "name": "bento-toa-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/bento-toa/3.37/bento-toa-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/bento-toa/3.37/bento-toa-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Bento-Toa-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Bento-Toa-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "chief-shop-glassblower",
+      "description": "Buys glass making supplies, from store, casts the super make lunar spell. Crafts the melted glass, into a glass item, and drops or sells the items back to the store. One of the cheapest and quickest crafting methods.",
+      "version": 1,
+      "author": "Chieftain",
+      "imageUrl": "https://runescape.wiki/images/Glassblowing.gif?71666",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/32204-chief-shop-glass-blower/",
+      "storeId": 947,
+      "scriptId": 0.40975158136390455,
+      "jarFile": "jars/Chief_Shop_Glassblower.jar",
+      "optionFile": "options/Chief_Shop_Glassblower.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Chief_Shop_Glassblower.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Chief%20Shop%20Glassblower/3.39/Chief_Shop_Glassblower.json"
+        },
+        {
+          "name": "chief-glassblow-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/chief-shop-glassblower/3.39/chief-glassblow-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/chief-shop-glassblower/3.39/chief-glassblow-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Chief-Shop-Glassblower-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Chief-Shop-Glassblower-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "dreamy-aio-minigames",
+      "description": "Save around 100$ on this bundle!\r\n\r\n11 minigames in one script | Very advanced | Notifications | Stop settings\r\n\r\n\r\nWelcome to Dreamy AIO Minigames,\r\n\r\nThis script contains 10 minigames in one script. \r\n\r\n\r\n\r\nThe following minigames are added:\r\n\r\nDreamy Pest Control.\r\nDreamy Blast Furnace.\r\nDreamy Ranged Guild.\r\nDreamy Castle Wars.\r\nDreamy Nightmarezone.\r\nDreamy Wintertodt.\r\nDreamy Tempoross.\r\nDreamy trawlers.\r\nDreamy motherlode.\r\nDreamy Chompy.\r\nDreamy Mahogany Homes.",
+      "version": 1,
+      "author": "Zawy",
+      "imageUrl": "https://i.imgur.com/k8ptJKZ.png",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/21873-%F0%9F%91%91dream-aio-minigames%F0%9F%91%91pest-control-blast-furnace-ranged-guild-castle-wars/",
+      "storeId": 411,
+      "scriptId": 0.725476150058133,
+      "jarFile": "jars/Dreamy_AIO_Minigames.jar",
+      "optionFile": "options/Dreamy_AIO_Minigames.txt",
+      "botVersion": "3.37",
+      "contributor": "YonCloud",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Dreamy_AIO_Minigames.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Minigames/3.37/Dreamy_AIO_Minigames.json"
+        },
+        {
+          "name": "output-6.zip",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-aio-minigames/3.37/output-6.zip"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-aio-minigames/3.37/output-6.zip"
+      },
+      "githubRelease": {
+        "tagName": "Dreamy-AIO-Minigames-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Dreamy-AIO-Minigames-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "dreamy-aio-money-maker",
+      "description": "https://i.imgur.com/1uWsOPr.png\r\n\r\nSave around $65 on this amazing bundle!\r\n\r\nThis script contains 14 money making methods.\r\nTanner ( All hides, Potion support! )\r\nAIO Tab maker.\r\nAIO Fungus collector.\r\nAIO Air orber.\r\nSpiders eggs collector\r\nPlank maker\r\nPlank collector \r\nEnchanter\r\nCannonballer\r\nClimbing boots collector\r\nItem combiner\r\nBowstringer\r\nShopper\r\nWineGrabber",
+      "version": 1.8,
+      "author": "Zawy",
+      "imageUrl": "https://gujaratiname.com/wp-content/uploads/2025/03/The-Best-Low-Effort-OSRS-Money-Making-Methods-in-2025.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/20423-F09F92B0zawys-aio-money-makerF09F92B0-8-methods-1-scriptF09F92B0account-rotationF09F92B0low-levelF09F92B0advancedF09F92B0up-to-500kF09F92B0/",
+      "storeId": 383,
+      "scriptId": 0.7840081573979092,
+      "jarFile": "jars/Dreamy_AIO_Money_Maker.jar",
+      "optionFile": "options/Dreamy_AIO_Money_Maker.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Dreamy_AIO_Money_Maker.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Money%20Maker/3.39/Dreamy_AIO_Money_Maker.json"
+        },
+        {
+          "name": "dreamy-aio-money-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-aio-money-maker/3.39/dreamy-aio-money-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-aio-money-maker/3.39/dreamy-aio-money-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Dreamy-AIO-Money-Maker-v1.8",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Dreamy-AIO-Money-Maker-v1.8",
+        "assets": []
+      }
+    },
+    {
+      "name": "Dreamy AIO Skiller Elite Lifetime",
+      "description": "ONLY $119,95 Lifetime for around $300 worth of scripts.\r\n\r\n| All 23 skills in one script | 86 Quests included | 6 Diaries | 12 Minigames | 19 Money making scripts | Smart Desktop & Discord Notifications | Customised profiles |\r\n\r\nThe following scripts are included:\r\n\r\nWoodcutting\r\nFishing\r\nMining\r\nCooking\r\nFletching\r\nSmithing\r\nCrafting \r\nHerblore \r\nThieving \r\nRuneCrafting\r\nPrayer \r\nConstruction\r\nFiremaking\r\nAgility\r\nMagic\r\nAttack\r\nStrength\r\nDefence\r\nHitpoints\r\nRanged\r\nHunting\r\nFarming\r\nQuests\r\nMinigames\r\nMoney making\r\nSlayer\r\nSpidines\r\nCrabs\r\nhttps://i.imgur.com/eKP1Qvs.png\r\nhttps://i.imgur.com/AYJVSu3.png\r\nhttps://i.imgur.com/Dt2iIyc.png\r\nhttps://i.imgur.com/RozSfit.png\r\nhttps://i.imgur.com/VpvS7Mt.png\r\nhttps://i.imgur.com/ObtdLIp.png\r\nhttps://i.imgur.com/cAx3WUE.png\r\nhttps://i.imgur.com/zWfuSE1.png\r\nhttps://i.imgur.com/Wqt5ixG.png\r\nhttps://i.imgur.com/zDjR90w.png\r\nhttps://i.imgur.com/VUzyTvL.png\r\nhttps://i.imgur.com/bHyCNqe.png\r\nhttps://i.imgur.com/TKmgQ5o.png\r\nhttps://i.imgur.com/AT0oVMK.png\r\nhttps://i.imgur.com/3RmtKuB.png\r\nhttps://i.imgur.com/7tqKMqm.png\r\nhttps://i.imgur.com/KBVgw6N.png\r\nhttps://i.imgur.com/Aa1vTZU.png\r\nhttps://i.imgur.com/cCqwTC1.png",
+      "version": 8.2,
+      "author": "Zawy",
+      "imageUrl": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Skiller%20Elite%20Lifetime/3.30.37/a222XEx.png",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/23391-%F0%9F%91%91dreamy-aio-skiller-elite%F0%9F%91%91-20-skills-in-one-script-quests-f2pp2p-8-minigames-smart-desktop-discord-notifications-customised-profiles/://:attack,strength,defence,ranged,magic,quests,woodcutting,agility",
+      "storeId": 498,
+      "scriptId": 0.8539865815890391,
+      "jarFile": "jars/Dreamy_AIO_Skiller_Elite_Lifetime.jar",
+      "optionFile": "options/Dreamy_AIO_Skiller_Elite_Lifetime.txt",
+      "botVersion": "3.30.37",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Dreamy_AIO_Skiller_Elite_Lifetime.jar",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Skiller%20Elite%20Lifetime/3.30.37/Dreamy_AIO_Skiller_Elite_Lifetime.jar"
+        },
+        {
+          "name": "Dreamy_AIO_Skiller_Elite_Lifetime.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Skiller%20Elite%20Lifetime/3.30.37/Dreamy_AIO_Skiller_Elite_Lifetime.json"
+        },
+        {
+          "name": "Dreamy_AIO_Skiller_Elite_Lifetime.txt",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Skiller%20Elite%20Lifetime/3.30.37/Dreamy_AIO_Skiller_Elite_Lifetime.txt"
+        },
+        {
+          "name": "a222XEx.png",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20AIO%20Skiller%20Elite%20Lifetime/3.30.37/a222XEx.png"
+        }
+      ],
+      "downloads": {
+        "jar": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.jar",
+        "txt": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.txt",
+        "json": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.json",
+        "fallbackUrls": {
+          "jar": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.jar",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.jar",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.jar"
+          },
+          "txt": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.txt",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.txt",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.txt"
+          },
+          "json": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.json",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.json",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2/Dreamy-AIO-Skiller-Elite-Lifetime.json"
+          }
+        }
+      },
+      "githubRelease": {
+        "tagName": "Dreamy-AIO-Skiller-Elite-Lifetime-v8.2",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Dreamy-AIO-Skiller-Elite-Lifetime-v8.2",
+        "assets": []
+      }
+    },
+    {
+      "name": "dreamy-runecrafting",
+      "description": "Trains runecrafting at all normal altars\r\nThis script supports restocking and task system",
+      "version": 1.3,
+      "author": "Zawy",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIz4EjId3yB2OwBTlL-VC36x9186LTxUY0A&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/21690-F09F9191dream-runecraftingF09F9191all-normal-altars-grand-exchange-potions-proggresive-mode-pouches/",
+      "storeId": 406,
+      "scriptId": 0.8551547270062501,
+      "jarFile": "jars/Dreamy_Runecrafting.jar",
+      "optionFile": "options/Dreamy_Runecrafting.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Dreamy_Runecrafting.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Dreamy%20Runecrafting/3.39/Dreamy_Runecrafting.json"
+        },
+        {
+          "name": "dreamyrc-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-runecrafting/3.39/dreamyrc-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/dreamy-runecrafting/3.39/dreamyrc-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Dreamy-Runecrafting-v1.3",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Dreamy-Runecrafting-v1.3",
+        "assets": []
+      }
+    },
+    {
+      "name": "gaioaccountbuilder",
+      "description": "Trains ALL 23 skills. Integrates Guester (180+ quests, SEPARATE PURCHASE). Builds ANY account in one click.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-rO4QBNwsDy0MDuG3WiqrPEosc1ryo0ozg&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29839-g-aio-account-builder-just-click-start-integrated-muling-easy-setup-quickstart-supported/://:da_all_be_in_one",
+      "storeId": 811,
+      "scriptId": 0.5569341848141378,
+      "jarFile": "jars/GAIOAccountBuilder.jar",
+      "optionFile": "options/GAIOAccountBuilder.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GAIOAccountBuilder.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GAIOAccountBuilder/3.37/GAIOAccountBuilder.json"
+        },
+        {
+          "name": "gaio-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gaioaccountbuilder/3.37/gaio-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gaioaccountbuilder/3.37/gaio-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GAIOAccountBuilder-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GAIOAccountBuilder-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gaioaccountbuilder",
+      "description": "Trains ALL 23 skills. Integrates Guester (180+ quests, SEPARATE PURCHASE). Builds ANY account in one click.",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-rO4QBNwsDy0MDuG3WiqrPEosc1ryo0ozg&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29839-g-aio-account-builder-just-click-start-integrated-muling-easy-setup-quickstart-supported/://:da_all_be_in_one",
+      "storeId": 811,
+      "scriptId": 0.7110944848722434,
+      "jarFile": "jars/GAIOAccountBuilder.jar",
+      "optionFile": "options/GAIOAccountBuilder.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GAIOAccountBuilder.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GAIOAccountBuilder/3.39/GAIOAccountBuilder.json"
+        },
+        {
+          "name": "gaio-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gaioaccountbuilder/3.39/gaio-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gaioaccountbuilder/3.39/gaio-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GAIOAccountBuilder-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GAIOAccountBuilder-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gbarbarian-assault",
+      "description": "Completes Barbarian Assault. Easily get a Fighter Torso. You only need one account! Ironman support.",
+      "version": 38.32,
+      "author": "GZero",
+      "imageUrl": "https://static.wikia.nocookie.net/2007scape/images/5/51/Fighting_Penance_Queen.png/revision/latest?cb=20180125162238",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/32413-gbarbarian-assault-by-gscripts-only-1-account-needed-fighter-torso-ironman-support/://:api_key=f9eb4fca39f4a27758f63a483858d2b5df59869bb487a57f623bf2713c01317c",
+      "storeId": 953,
+      "scriptId": 0.7312613146688827,
+      "jarFile": "jars/GBarbarian_Assault.jar",
+      "optionFile": "options/GBarbarian_Assault.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GBarbarian_Assault.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GBarbarian%20Assault/3.37/GBarbarian_Assault.json"
+        },
+        {
+          "name": "gbarb-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gbarbarian-assault/3.37/gbarb-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gbarbarian-assault/3.37/gbarb-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GBarbarian-Assault-v38.32",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GBarbarian-Assault-v38.32",
+        "assets": []
+      }
+    },
+    {
+      "name": "gdt2-bosses",
+      "description": "Kills Whisperer, Vardorvis, Duke & Leviathan. 3-7m gp/hr. Consistent updates. Auto swapping.",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://pbs.twimg.com/media/F3FCLPvXIAAgFsZ.jpg:large",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/28125-g-dt2-bundle-leviathan-duke-whisperer-vardorvis/",
+      "storeId": 636,
+      "scriptId": 0.398253489653702,
+      "jarFile": "jars/GDT2_Bosses.jar",
+      "optionFile": "options/GDT2_Bosses.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GDT2_Bosses.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GDT2%20Bosses/3.39/GDT2_Bosses.json"
+        },
+        {
+          "name": "gdt2-bosses-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdt2-bosses/3.39/gdt2-bosses-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdt2-bosses/3.39/gdt2-bosses-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GDT2-Bosses-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GDT2-Bosses-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gdelve",
+      "description": "Kills the Doom of Mokhaiotl. Reverse muling, auto-restocking, dynamic gearing, near inf prayer with lazy flicking.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GDelve/3.37/517434685_1076315884631297_7531099669178769945_n.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/40217-g-delve-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:moka woka doka boka",
+      "storeId": 973,
+      "scriptId": 0.9800250698508739,
+      "jarFile": "jars/GDelve.jar",
+      "optionFile": "options/GDelve.txt",
+      "botVersion": "3.37",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "517434685_1076315884631297_7531099669178769945_n.jpg",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GDelve/3.37/517434685_1076315884631297_7531099669178769945_n.jpg"
+        },
+        {
+          "name": "GDelve.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GDelve/3.37/GDelve.json"
+        },
+        {
+          "name": "gdelve-14-09-1.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdelve/3.37/gdelve-14-09-1.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdelve/3.37/gdelve-14-09-1.7z"
+      },
+      "githubRelease": {
+        "tagName": "GDelve-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GDelve-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gdemonicgorillas",
+      "description": "Kills demonic gorillas. Reverse muling, auto-restocking, dynamic gearing, inf prayer. Up to 5m/hr",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV8H6Mi7t8ksZB8tty-RXvY3Ps8JtfyxOmw&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31900-g-demonic-gorillas-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/",
+      "storeId": 931,
+      "scriptId": 0.09227425258377919,
+      "jarFile": "jars/GDemonicGorillas.jar",
+      "optionFile": "options/GDemonicGorillas.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GDemonicGorillas.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GDemonicGorillas/3.39/GDemonicGorillas.json"
+        },
+        {
+          "name": "gdemonic-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdemonicgorillas/3.39/gdemonic-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gdemonicgorillas/3.39/gdemonic-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GDemonicGorillas-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GDemonicGorillas-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "GHueycoatl",
+      "description": "Kills Hueycoatl. Reverse muling, auto-restocking, dynamic gearing, inf prayer.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GHueycoatl/3.30.37/400px--The_Hueycoatl_-_final_phase_gameplay.mp4.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/39655-g-hueycoatl-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:huey_coaty",
+      "storeId": 888,
+      "scriptId": 0.6686417191845735,
+      "jarFile": "jars/GHueycoatl.jar",
+      "optionFile": "options/GHueycoatl.txt",
+      "botVersion": "3.30.37",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "400px--The_Hueycoatl_-_final_phase_gameplay.mp4.jpg",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GHueycoatl/3.30.37/400px--The_Hueycoatl_-_final_phase_gameplay.mp4.jpg"
+        },
+        {
+          "name": "GHueycoatl.jar",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GHueycoatl/3.30.37/GHueycoatl.jar"
+        },
+        {
+          "name": "GHueycoatl.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GHueycoatl/3.30.37/GHueycoatl.json"
+        },
+        {
+          "name": "GHueycoatl.txt",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GHueycoatl/3.30.37/GHueycoatl.txt"
+        }
+      ],
+      "downloads": {
+        "jar": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.jar",
+        "txt": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.txt",
+        "json": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.json",
+        "fallbackUrls": {
+          "jar": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.jar",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GHueycoatl-v38.39/GHueycoatl.jar",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GHueycoatl-v38.39/GHueycoatl.jar"
+          },
+          "txt": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.txt",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GHueycoatl-v38.39/GHueycoatl.txt",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GHueycoatl-v38.39/GHueycoatl.txt"
+          },
+          "json": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GHueycoatl-v38.39/GHueycoatl.json",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GHueycoatl-v38.39/GHueycoatl.json",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GHueycoatl-v38.39/GHueycoatl.json"
+          }
+        }
+      },
+      "githubRelease": {
+        "tagName": "GHueycoatl-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GHueycoatl-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "GLMS",
+      "description": "Completes Last Man Standing for rewards. \"Terminator\" mode available. Real fight logic. Supports reverse muling and auto-restocking.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Last_Man_Standing_artwork.png/300px-Last_Man_Standing_artwork.png?906db",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30439-g-lms-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/",
+      "storeId": 844,
+      "scriptId": 0.5834793047650615,
+      "jarFile": "jars/GLMS.jar",
+      "optionFile": "options/GLMS.txt",
+      "botVersion": "3.37",
+      "contributor": "Mc",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GLMS.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GLMS/3.37/GLMS.json"
+        },
+        {
+          "name": "GLMS.rar",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GLMS/3.37/GLMS.rar"
+        }
+      ],
+      "downloads": {
+        "jar": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.jar",
+        "txt": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.txt",
+        "json": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.json",
+        "fallbackUrls": {
+          "jar": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.jar",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GLMS-v38.39/GLMS.jar",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GLMS-v38.39/GLMS.jar"
+          },
+          "txt": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.txt",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GLMS-v38.39/GLMS.txt",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GLMS-v38.39/GLMS.txt"
+          },
+          "json": {
+            "primary": "https://cdn.jsdelivr.net/gh/stichtingoumaima/pillow-jars@GLMS-v38.39/GLMS.json",
+            "fallback1": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/GLMS-v38.39/GLMS.json",
+            "fallback2": "https://github.com/stichtingoumaima/pillow-jars/releases/download/GLMS-v38.39/GLMS.json"
+          }
+        }
+      },
+      "githubRelease": {
+        "tagName": "GLMS-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GLMS-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gmoonsofperil",
+      "description": "500k–2m gp/hr. Consistent updates. Does Moons of Peril. Supports reverse muling, and auto-restocking.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://i.ytimg.com/vi/_0r4bFj-UwE/maxresdefault.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/39704-g-moonsofperil-just-click-start-auto-restock-one-tick-flick-integrated-muling-easy-setup-quickstart-supported/://:moony_woony",
+      "storeId": 796,
+      "scriptId": 0.7218845518065022,
+      "jarFile": "jars/GMoonsOfPeril.jar",
+      "optionFile": "options/GMoonsOfPeril.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GMoonsOfPeril.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GMoonsOfPeril/3.37/GMoonsOfPeril.json"
+        },
+        {
+          "name": "g-moons-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gmoonsofperil/3.37/g-moons-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gmoonsofperil/3.37/g-moons-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GMoonsOfPeril-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GMoonsOfPeril-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gpvparena",
+      "description": "Add-on for all G PVM Scripts. Completes Emir's PVP Arena for imbues - gets imbues much faster than NMZ",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://oldschool.runescape.wiki/images/PvP_Arena-_Soft_Launch_newspost.png?1d265",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29098-g-arena-add-on-easy-setup-quickstart-supported/",
+      "storeId": 733,
+      "scriptId": 0.7002751374796397,
+      "jarFile": "jars/GPvPArena.jar",
+      "optionFile": "options/GPvPArena.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GPvPArena.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GPvPArena/3.39/GPvPArena.json"
+        },
+        {
+          "name": "gpvparena-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gpvparena/3.39/gpvparena-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gpvparena/3.39/gpvparena-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GPvPArena-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GPvPArena-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "groyaltitans",
+      "description": "Kills the Royal Titans Branda and Eldric. Reverse muling, auto-restocking, dynamic gearing, inf prayer.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://i.ytimg.com/vi/Znytodsmq-g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAl64IeYyRAa_bJdKh1madhZfrF5A",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/32047-g-royal-titans-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:royaly_titanty",
+      "storeId": 936,
+      "scriptId": 0.45488232373367854,
+      "jarFile": "jars/GRoyalTitans.jar",
+      "optionFile": "options/GRoyalTitans.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GRoyalTitans.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GRoyalTitans/3.37/GRoyalTitans.json"
+        },
+        {
+          "name": "g-royal-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/groyaltitans/3.37/g-royal-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/groyaltitans/3.37/g-royal-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GRoyalTitans-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GRoyalTitans-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gslayer",
+      "description": "Cannon & Barrage/bursting support! Masters: Turael, Mazchna, Vannaka, Chaeldar, Nieve/Steve, Duradel/Kuradel. Supports reverse muling, and auto-restocking.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://i.redd.it/plmtg19a2kk51.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/39765-g-slayer-just-click-start-auto-restock-one-tick-flick-integrated-muling-easy-setup-quickstart-supported/",
+      "storeId": 809,
+      "scriptId": 0.08070144970892468,
+      "jarFile": "jars/GSlayer.jar",
+      "optionFile": "options/GSlayer.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GSlayer.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GSlayer/3.37/GSlayer.json"
+        },
+        {
+          "name": "gslayer-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gslayer/3.37/gslayer-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gslayer/3.37/gslayer-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GSlayer-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GSlayer-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gspindel",
+      "description": "2m–4.5m gp/hr. Low reqs. Consistent updates. Kills Spindel",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://i.ytimg.com/vi/FcX3l6L4I3k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCxoBileAXrQ6ZGM-iJfWjt-Dj0w",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/27198-gspindel-just-click-start-easy-setup-anti-pk-3-5m-gp-per-hour-quickstart-supported/",
+      "storeId": 572,
+      "scriptId": 0.003521368018524651,
+      "jarFile": "jars/GSpindel.jar",
+      "optionFile": "options/GSpindel.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GSpindel.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GSpindel/3.37/GSpindel.json"
+        },
+        {
+          "name": "g-spindel-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gspindel/3.37/g-spindel-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gspindel/3.37/g-spindel-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GSpindel-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GSpindel-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gthieving",
+      "description": "Blackjacking, Vyres and Elves! Trains Thieving. Supports reverse muling, auto-restocking, and progressive training. Supports blackjacking.",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://i.ytimg.com/vi/-SIUg-lXTxc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDuoEFrdQnTdk6v_4GfVm0KwcsqXA",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29359-g-thieving-add-on-auto-restock-integrated-muling-easy-setup-quickstart-supported/",
+      "storeId": 763,
+      "scriptId": 0.8726608507143312,
+      "jarFile": "jars/GThieving.jar",
+      "optionFile": "options/GThieving.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GThieving.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GThieving/3.37/GThieving.json"
+        },
+        {
+          "name": "gthiev-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gthieving/3.37/gthiev-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gthieving/3.37/gthiev-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GThieving-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GThieving-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gtormenteddemons",
+      "description": "Kills tormented demons. Reverse muling, auto-restocking, dynamic gearing, inf prayer. Up to 7m/hr",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://preview.redd.it/tormented-demons-v0-2rmbu797v8yc1.jpeg?auto=webp&s=c0492ebea6342438760c279b17166201a2ab593b",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/32547-g-tormented-demons-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:gormented gemons",
+      "storeId": 857,
+      "scriptId": 0.10452315456152772,
+      "jarFile": "jars/GTormentedDemons.jar",
+      "optionFile": "options/GTormentedDemons.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GTormentedDemons.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GTormentedDemons/3.37/GTormentedDemons.json"
+        },
+        {
+          "name": "g-tormented-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gtormenteddemons/3.37/g-tormented-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gtormenteddemons/3.37/g-tormented-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GTormentedDemons-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GTormentedDemons-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gvetion",
+      "description": "1.5m–5.25m gp/hr. Consistent updates. Kills Vet’ion (Multi)",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Fighting_Vet%27ion.png/800px-Fighting_Vet%27ion.png?7b067",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/27156-gvetion-just-click-start-easy-setup-anti-pk-3-5m-gp-per-hour-quickstart-supported/",
+      "storeId": 574,
+      "scriptId": 0.1502513754276793,
+      "jarFile": "jars/GVetion.jar",
+      "optionFile": "options/GVetion.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GVetion.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GVetion/3.39/GVetion.json"
+        },
+        {
+          "name": "gvetion-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gvetion/3.39/gvetion-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gvetion/3.39/gvetion-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GVetion-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GVetion-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gvorkath",
+      "description": "1.5 - 4m/hr. Consistent updates. Kills Vorkath",
+      "version": 38.39,
+      "author": "GZero",
+      "imageUrl": "https://external-preview.redd.it/first-look-at-vorkath-from-the-other-game-v0-75fZYhLVTmwyoEB378FxjlFNzNfF1nQ6wK2irEznY5A.jpg?auto=webp&s=11edc1069260f11bef15375296f4dc92585ac5b5",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/27134-g-vorkath-15-35mhr-just-click-start-easy-setup/",
+      "storeId": 599,
+      "scriptId": 0.023854163794627015,
+      "jarFile": "jars/GVorkath.jar",
+      "optionFile": "options/GVorkath.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GVorkath.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GVorkath/3.37/GVorkath.json"
+        },
+        {
+          "name": "g-vorkath-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gvorkath/3.37/g-vorkath-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gvorkath/3.37/g-vorkath-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GVorkath-v38.39",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GVorkath-v38.39",
+        "assets": []
+      }
+    },
+    {
+      "name": "gyama",
+      "description": "Duo and Solo support! Kills Yama. Reverse muling, auto-restocking, dynamic gearing, inf prayer.",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9HqczUnHp19LKNgqhc2brseJi9_534DyBw&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/37351-g-yama-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:yama g g yummy yama",
+      "storeId": 961,
+      "scriptId": 0.0012364537625000338,
+      "jarFile": "jars/GYama.jar",
+      "optionFile": "options/GYama.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GYama.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GYama/3.39/GYama.json"
+        },
+        {
+          "name": "gyama-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gyama/3.39/gyama-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gyama/3.39/gyama-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GYama-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GYama-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gzilyana",
+      "description": "Kills Commander Zilyana. True mouse support, blood spells, reverse muling, auto-restocking, dynamic gearing, inf prayer. Up to 5m/hr",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://i.redd.it/o5tn5uvogj381.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/39923-g-zilyana-just-click-start-auto-restock-integrated-muling-easy-setup-quickstart-supported/://:zilly willy",
+      "storeId": 967,
+      "scriptId": 0.8730221806111205,
+      "jarFile": "jars/GZilyana.jar",
+      "optionFile": "options/GZilyana.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GZilyana.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GZilyana/3.39/GZilyana.json"
+        },
+        {
+          "name": "gzilyana-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gzilyana/3.39/gzilyana-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gzilyana/3.39/gzilyana-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GZilyana-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GZilyana-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gzulrah",
+      "description": "1 - 3.5m gp/hr. Consistent updates. Kills Zulrah",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://i.redd.it/3vxcufubz4z91.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/27575-gzulrah/",
+      "storeId": 621,
+      "scriptId": 0.09101030621142847,
+      "jarFile": "jars/GZulrah.jar",
+      "optionFile": "options/GZulrah.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "GZulrah.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/GZulrah/3.39/GZulrah.json"
+        },
+        {
+          "name": "gzulrah-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gzulrah/3.39/gzulrah-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gzulrah/3.39/gzulrah-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "GZulrah-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/GZulrah-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "gains-aio-construction",
+      "description": "All essential furniture - Servants - Phials - G.E. support - Task system",
+      "version": 1.2,
+      "author": "Gains",
+      "imageUrl": "https://pbs.twimg.com/media/GG5La8QW8AAwXbC.jpg:large",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29977-gains-aio-construction-all-essential-furniture-servants-phials-ge-support-task-system-quickstart/",
+      "storeId": 828,
+      "scriptId": 0.5886329852561438,
+      "jarFile": "jars/Gains_AIO_Construction.jar",
+      "optionFile": "options/Gains_AIO_Construction.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Gains_AIO_Construction.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Gains%20AIO%20Construction/3.39/Gains_AIO_Construction.json"
+        },
+        {
+          "name": "gains-construction-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gains-aio-construction/3.39/gains-construction-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/gains-aio-construction/3.39/gains-construction-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Gains-AIO-Construction-v1.2",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Gains-AIO-Construction-v1.2",
+        "assets": []
+      }
+    },
+    {
       "name": "guester",
+      "description": "180+ quests & diaries. Ironman: No items & gold needed. New quests added regularly. 100% In-Progress support, quest-queuing, GCombat logic.",
+      "version": 38.4,
+      "author": "GZero",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBS8zLU6gv4opg_36zLQbihA1YYz-0PhpH8Q&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29141-guester-by-gscripts-150-quests-diaries-150-ironman-quest-diaries-ironman-aio-in-progress-support-quest-queuing-quester/://:testy_guesty",
+      "storeId": 742,
+      "scriptId": 0.45863496725641606,
+      "jarFile": "jars/Guester.jar",
+      "optionFile": "options/Guester.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Guester.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Guester/3.39/Guester.json"
+        },
+        {
+          "name": "guester-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guester/3.39/guester-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guester/3.39/guester-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Guester-v38.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Guester-v38.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "krt-cannonballs-pro",
+      "description": "Custom mouse algo, double ammo mould support, muling, restocking, and much much more!\r\nMake those cannonballs like a boss.",
+      "version": 1,
+      "author": "KRTBotting",
+      "imageUrl": "https://oldschool.runescape.wiki/images/Smelting.gif?c31b1",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/40599-krt-cannonballs-pro-custom-mouse-algo-muling-restocking-quick-start-extensive-antiban-and-deep-seeding/://:cannonballpro",
+      "storeId": 983,
+      "scriptId": 0.8274207338837893,
+      "jarFile": "jars/KRT_Cannonballs_PRO.jar",
+      "optionFile": "options/KRT_Cannonballs_PRO.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "KRT_Cannonballs_PRO.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/KRT%20Cannonballs%20PRO/3.39/KRT_Cannonballs_PRO.json"
+        },
+        {
+          "name": "krt-cannonball-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/krt-cannonballs-pro/3.39/krt-cannonball-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/krt-cannonballs-pro/3.39/krt-cannonball-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "KRT-Cannonballs-PRO-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/KRT-Cannonballs-PRO-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "krt-gemstone-crab-pro",
+      "description": "Kills the gemstone crab for the best AFK experience in the game.",
+      "version": 1,
+      "author": "KRTBotting",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQef63e0Rm3wHSIM5uLNn7v0zjxjlOthlVlGw&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/40227-krt-gemstone-crab-pro-markov-based-antiban-profiles-all-combat-styles-best-afk-combat-xp/://:gemstonecrabpro",
+      "storeId": 971,
+      "scriptId": 0.05460043775901857,
+      "jarFile": "jars/KRT_Gemstone_crab_PRO.jar",
+      "optionFile": "options/KRT_Gemstone_crab_PRO.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "KRT_Gemstone_crab_PRO.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/KRT%20Gemstone%20crab%20PRO/3.37/KRT_Gemstone_crab_PRO.json"
+        },
+        {
+          "name": "krt-crab-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/krt-gemstone-crab-pro/3.37/krt-crab-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/krt-gemstone-crab-pro/3.37/krt-crab-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "KRT-Gemstone-crab-PRO-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/KRT-Gemstone-crab-PRO-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "luxe-port-phasmatys-glassblower",
+      "description": "Port Phasmatys glassblower for early Ironman grinds.\r\nWorks for ALL types of accounts",
+      "version": 1.1,
+      "author": "Luxe",
+      "imageUrl": "https://sammichscripts.com/wp-content/uploads/RL-GLASSBLOWING-3.png",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30974-luxe-port-phasmatys-glassblower/",
+      "storeId": 867,
+      "scriptId": 0.7526046179724382,
+      "jarFile": "jars/LUXE_Port_Phasmatys_Glassblower.jar",
+      "optionFile": "options/LUXE_Port_Phasmatys_Glassblower.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "LUXE_Port_Phasmatys_Glassblower.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/LUXE%20Port%20Phasmatys%20Glassblower/3.39/LUXE_Port_Phasmatys_Glassblower.json"
+        },
+        {
+          "name": "luxe-glassblow-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/luxe-port-phasmatys-glassblower/3.39/luxe-glassblow-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/luxe-port-phasmatys-glassblower/3.39/luxe-glassblow-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "LUXE-Port-Phasmatys-Glassblower-v1.1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/LUXE-Port-Phasmatys-Glassblower-v1.1",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxbarrows",
+      "description": "Completes Barrows efficiently with highly customizable loadouts, Brothers targeting options, attack styles, and target reward percentage. Navigates the tunnel with ease and quickly solves all door puzzles!",
+      "version": 3.77,
+      "author": "MaximusPrimo",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUTEhIWFRUVFRUVFRUWFRUVFRUXFRUWFxUSFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGC8fICUtLS8tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLf/AABEIALEBHAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xAA7EAABAwIEAwYEBAUFAAMAAAABAAIRAyEEEjFBBVFhBhMicYGRMqGx8BRCwdEHUnLh8SNigpKyFTOD/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAkEQADAQACAwACAgMBAAAAAAAAARECEiEDMUFRYSJxEzLwQv/aAAwDAQACEQMRAD8A8+BUgqmlWL2nIeE8JpThASaFJRCdUg6SZJAJIlNKk0KgTQrFIU0sicWQZoUiFNrUi1OLNFRKdqctTQstARJUfNShKFICspZVPu1Y1qRggxqnCdKUgGcoJykkAyRSSQg0JEJJIBJiE6YqQtGITEKUJQpC0rLFAsV6iUhaUFibKr4TZUhQQBWNVcp1owWKbSqQpgqgtlOVSpgpQSSTSpBWkGhWUzCgQoyrSBfepi8IYFPKvMQvzqWdUAp8yj0CzMnkKqUpSlCJV1WhlpscdamYtHJrTlzHzcHD/h1QOdanHTlqU6e9PD0WuH8ryHPe0/8AJxPqo99oqQIAkqw9PnWuRCRTKsuSlKSFkKUKnOlnV5IsLcqUKnMnlTn+jXEmVEppUSVnkOJJMSoyoko2ITlKVUSmlSgsLlEuUJTFyUEy5KVQ+tEAanT9ypZlmlKJUmlNZMCs8iQtBVgVEpxUVoheFIFDZ04elECJClKG7xOKqvIkLyokqrOnlOQ4k8yWZVlyaUpYXAp5UBTOQvGgcGnmCQS2ehh3/U9JgHpyELgU+ZU96FdTpzSc7fvKbQZ2c2oXD5NUekgs03abKGDpsrVh3tWowPp0o8LS5riC8T4pa6mehO6w3Yt1R76lT4nuzHf3UcfjzWc0kQGNDGDk0WHyAHoqMyxmv+TNP8BYqBIvCFzJFy68iQIzp8yhgsO6o8MbqQ43/wBrS4/JpVYcnJWEhfmSzKguUS5KIXl6bOh5SlTkXiEGomzqiU4cpyELs6WdDuco5k5F4hOZKUPmT5kohaSqKxu0bSJ9CI+almUHmyzr0WCpmST1geimqaT9QdyTPO91aCph9BoHNZQdUsh5SlQG1xuv3lcvZGV4YWAbBrGtDI2Iyx6LPFRU0qpHoZH6/Qey2OG4ClWqHPWFJpaXwG5nuLZz02NkNmxNyLc7hTL4qCGaaibvkVxjDUqZ/wBKo5zSYh7Q13Q2JBH0PNZudaqZIECqjMC0PzNkBxAyEkxIPw+o+nmsovV+CxhY4aEZmkggEGDyKztudGoddVwmBpUswrVn1QG5mwwMO5GhLRoNVyxxhdUe5xJLnvcT1c4n5yqTjjOYuJIGswNMp0sJ1sp0WA1M8ZgbxpmO9vytG7jAEHcLz5trZf0XGooGolWHhnrJOkzs0chz0k9ELnXoWqIaWBxTA6KgJY6zssZhyc2dwt7g/EOHUqmc061Uslw73J3ZiQPA0dQbyLLk6FMvJDdQ1zvRjS50dYBWmKLsMaVZr/ipNqAjVudpbUa7+l0tXHyf3DS9BXGe0r8RXzOa1zWnwtLZp5TtIty9kNjMYXtAysaGyAGNDRLtSeZga9EFxPFirXc5l8xLrcokuPIC99LI/F4I906o13gpmky+rqlWmXPjo3JEXsRzWcccykSfwAzKQeqqjS2zgQeRsfZRzr10zAgPV9ag9uo/LTeYvDajQ5hPKQ4e6fg/C34k1G09WUzUJgkQHNbFt/ESBvlK6b8XSrur5g6mH0qLIBY5rhTaMkQCP5SCD+UELj5PNxf/AH6NLFJ4DjGGwmGyOp0y948b3XcWnQX0HQQFyOIrNLzkIykZhBkDp7yp8YrtD4mbZdotZBYV9PO6wDRc5RtA0A3JIHuuPj6fKifC/vEjUVTwcoeB4STHMdCqu8XqWqSBXeJjVWj2Z7O1sa4hkMY346rpyt6AC7ndPci09FjOw1Cmwnv3udoBDRm5nLqB6+q5b8+MONlWaD9lMXhaGHfWrszve5zaZ7t1QMaxrcz7A5SS/X/b753GuJUcRiKjhBDiYIkZdDmsL3Bkf7juq8RxmP8ATfTDHiWve1xDagIiXUyIDjDSSIkgyJKxKHFe6carWtc4Zmsm+Q5rVI0kRInn6rzxvb39L0aXEaIAlojL4HjnHw1dYh2/UHmp4/Aijh6JeCKtUuqQbZaMAU5GxcQ93kQtThuAd+GFYkg02MF7kvJbAM9AT7c1z3GcZUfUJqGXSZPOdPK0fNdceR6cXz2WIo7xWYak+o4NY0ucdgJ9TyHVBiotHAYw02iNSS49Ys2fI5j6rrrURkrxdB9J2V7S08rfIix9FRnWlxPtA0syvZnJ+ECxHXNty6wsqo7pHTWOimNvSBJj7D1+qkHodj7e/wBUs62vRCBRPD8E+tUbTYLuOp0aN3OOwAuhJRdDiBZTdTY2C+zn3kjXIP5W8xv8kb/BUl9Nw4TDsmo0TTYCGl1zVIs+sQTABMNDdL7TbnauNzOzyQQ5pABOUAXaBzEQLjb32+2HGKRptwtFkNblBe4AOOUX03O/KIgXAwKGCLmyuF+su/cRt/8AxzsQ4BpA0AJ/meXBg9TlBO0qjjnDBh6r2PdTzRZlN+fKd8xFhBm19Qgvx76ZMOg2Aj5fVNiaMAGL7k6meauW7+iDcPwb69ZlGmAX1HBrZMCTuTsBck8gV6XQ/hXSyQcS5z3NcGvDAKYe03AZMuETqfyuMbLnv4TcI/EcRDnA5KDHPd1c4Gm1p88zj/wXX4/teDTFCg3NU7wtpmWyS15bngHQkesnqp5dtaiOuMJps4iv2GrUS5+Iq0qdMFwa4kkuyzdrGiY6mFz76mSY5xGoMfDIOsEExpMTovV8P2RcD32JivUiCGPg+ImQS4gQcxFotvBM+fds+HCnXLm0zTY5ziGEtkH8zYYbAGSJM3XJbVg143xqRl0a0m951JuT6oZ4gkKeFBmI+RP7lVOOq7+M4mv2cwNSoatSm4A4ek6tBE5hIaRyiHGZ103t0HDuzwzRWrBmTMQNYzx4d5FzbTWZlchgMS5hcGuLQ9pY6DEtMGD7BF4VmIrPFJrj4yBqQNzd3rfyWPMnfwdMw7Gp2dwuRxNemBExTYGAkXGcNu6Dz0XJYmpkcGZzk7zM4dWyJA2MK/iPAKuDeIcM1jLHEg9HD9CFg4vPMkzN56gLn4vdtG/6PUv4mYDB/g6FbDsY0zAqMABe3L8L4+LnJuI6leXFy0Bi3Gk1jnnLs2SRJ1DWjUn7lZ+IADoBnr13HXz3Xfxt+mTTXw63sTxr8LTquy5hUzNcLaNZ4ZOurzA6uO187A8QY0PDcwDbUwSHZRJ8BzA2usrAYttOcwc4GPC2BmibFx+EXN4K9K4L2Hp4qi2s7FPJeA9xDKNSnLgDFN1QEtA0ibQVy8mVnV/Jcp6XR5rxBwfJa2JOgmxPKb/cSYlV0AYh2msA63IzHnynT3k9X2o7J0sM/KcTILQ7MxuWbkZIzZba+vmodnuzOHxYruFV9PuqYOchrmnYA2F9PCNVeShni7Dm8JiTBYIIkxOmtlWXLd4AKNDvmYhjKneeFr2lwfTi2dstt7rBxLSHEEzyPMc108b7aDURv8PxlVtBop4h9Ma5GONMfFBcSILr9Y0CJfx6uzK38Q6oNw9we0jkHOkg9QfdN2KoVMW52GFNlTIw1GeJtF4DSAW95kdIJcLEWvBW/wAa7DYmnhn1qhoNIzf6TA98tDXOvWeZzQ3YRPJcdrt1Gllv0cNj62epmmS6Z6XEKl1JjXtJENnXSSIhB0XTJEmIgb9ERUBy5nfEQGxNh1HX9zqtSGTqxxpob3dO9gXTJAsIOXnpqQub4lXY4jLnzCzszWtEbRDjdB4F5BIG3XmlUfJn9lvx+NZdQboTgcL3joNRrBrLpJP9LR8R9kTi8OAMzTLR4b2IA3jrIKE4bRzvy5stpDuR9PRaVB2Vrmuicz+otA/QlPJSHPkkuBI3n78rIrBVhnBeMwBkiJDtwCNxMT0lFYyi3UWv9lAspnMQORPtBUzoiNPtK1gxL8hJaYcCRlPiEgRoIEC1rWhZoKjH6JLvldIr9llJgJuYA1PIeW55DdatHieGa05aTs4ADMwb6EkE6a9SVhF9o2mfXn99VGVlq+xRVHZnCdZK66ngg3DtO+/suRpRnB5LpsNxxsFtVuUEatJeBuMwAlcfIn8GYYPE6UO1jqiX/DAY4DKLlsZubhO3VVcUqtNwQeoU8VTaACLEESSIOkyevXqrn4Q9K7BUfw3CKuJpmK1dzhPJlJxYMvUE1DPMjkp9gMHhqJbisRVpMlrhSNSo1sZTkJ8Z+LUW80ZXwVWl2fENOenhxUI/rIe8RzAJ9l5HToBwEvJERcgfIi2vzXLvTb/Z6HpZykfQmJ4hQq0pp1mVN/A5riL82Erzb+KxaHsDBES4xsSBK4puCbTIc2o4O/2uAMa6tFlOKlao1re8q1H2aPE97uQG/wBlT/H/ACo/yzLQ+BwmWCBULYBOSABIsRNygcRZxB1ny+S38dhq2EJoVaRa8Q47nKRAuNrHpIN7Fc1UfJJ5lenx9ts4Mmx10dw/iID8hDiS+G5BJNwAI1J8lmNdfWOv6rTw/E6kkl76loLibibS0kTOok8zzTyKhM0+LcVDH5crwD4hm0PTM/xefJYVeu+oZaJGpDWh2Ucy6J9foi/xJAytm5iZyxNraweqAq4lzxdzz0Lsw+eixhcQ3TR4Y0uYRrYyJMAW2BuL6/IoLF04IkQTPh5AHWff67hF8AwdauXtoMc8tbmdlDDDRv47TMdbGEBi5DoIgjUdfLZaX+4forJXQ8E7bYjC0HYemGFjnFxztLokAENgiBv6lc1KsdT8Obr+108iTXZctp1BmPx9SsZLpkjdx0mAMxMfEfkpYPFVqVN4ZULGuEOAJAeDILXfzDUHos/Csl9rRf2ujXNlpF75WjcbyPl8ljj1Bybdo/DsRTdUcKxIDwR3gE5HHR5b+Zs6gXjTka8VXa4NhuVwBDoMsdBs5u43kXG4jRAhOXLrnP0lOt/hxW7vHMrOqNpsaHh7nPDZBb8AEy6+WYBi06hdx/EbtzSfhDQw7w9xDg54+EAtLSAedyvJ+EYotcQDEi5ibCSR5G3stHHmWHxG40Gn/UWjy9ly3n+Rtai6M+jgXNomq6Gt0aLZnmRaNQIkyeVk7mvIM5RADgDmJMkDYdfNVcPh5Ie4w0C2+ugmYARmSiJk1OkZT9QJVjMVFGBovNRzQ3xSGkZmxPKSRKpxdM03uYYlpgwQ4eWYWPKRZNWeWnwEwd4yn1ufqqWsLn5WiSTAH+V0xSUP4HWIrAgxY8o6yDqImynWqltRwixMxe0qjC4epTqDOxzfMWPkdCtbjuGBFKoDBeCHCSJIJEm/Q+kLG2qAEVef90M6rldIvqNt1a7DFus6fzH9ChcQ0CNdeZP1Kykh6FmsPIfRRzKDj+n0CjmXoz6AsyZz1SHIxmL7sRTAzRd5AJHRk/D5i6ELMLSc2XOGVsauET/SDcnyV76kF1wJgcz8LdgOiq4bTc/vKtQyxoAc53iJc4+FgOsm/oClm8WbrOk7yLErlr2U2Oy2Go1cQG12OqNJAFLMaLSYdmrVKoBLKbG5iQIcZEbrK409oqPYx0tBLQYIBAJggHS14PNQdVdeJEi8GJBOhvcW0QFV1/3/AMqZXZW1Iel8U/inWq08ga2kSIcGNzZmkEFpLgREFcSxmWBtqN7RZAYg+If0tPyWhh/EA3ebdZ2U1lZ9Gnp69jl/36IzA484arRrNkOacxIMHKWlsA6wRM8wUI2iTE2G5NrEa313t0V1LD99LgRY3bq4CCQ4C2YTMxfos+yJzs63tt29o4vBimKTTWeYNTKIptBDn5MwlpdYQDoT0nzpF4jAvjQSCTE38uh1VFTCVGtzFp9BMDm4izeUG67eOJDWq6VHVF4YWf8A8fqgmmSjcMLP8m/+t1N+zIQx1x5j9EDluR1I+/ZFFyHqfE7+o/8Ar+6yyG52V4v+GOZrg0ipnqZnZWvY2m4Mp/FJJc9w0gTMrM7RcU/E4h1XK1sgCGCxj8x5lZuJsVXmWllXkb5ucSZKPpHwj5fRZxcj6LvCPvYJv0ZRLDsAqWEWd9DsrHjS+4t73j3VFB3+q2Of6FGOvSkbPE6Wged9QsgCp0g6nVMXY0PB/wD1Ywj17z5IankgZiZm8DQLV4fTmhiwNe6bHk2q17vlTWEHLefoD8J3YMlxF46RESVs1AWsc0Q9wEmLimP5jtm/2+ZNhB5qnWLSHDUGRIBvsYK0KuIfB8bjeXdTpfms7XZU0ToYdrnBxdJOohE43BhrQ4bk/QRdCcKZmqydAPLXRanF7MYAQfiNjPKND5qEMGoPGZRWAwhc+Q4RkcbX20Pmgqo8c+y2OD08jZMeK83NosCPU+60QfF1Hsblza+8D/AW52P4q2n3veVA1zqQaxzvyy5znPaIILhlFoMzC5zH1gX9BDR7/uqXX9G/qVjSqNZcdNXilUPOZpabAyxhpg2uSw2aTybbksfF2y+ZP37LQw3weh+sLMx50+9ymF3CMofr7fRIKDnXTZl3T6IRSKsypixAHVcRlw9Ng3c57vP4R8ihhizOiqDVKoLrDXYLmYgE8rKnFDxJmMk6JsqZ6YLsYbs/ob9ESDp5oOq6Y6NA9lvcL7P1a2HbVbMF5ZtGZt49lnyRds1nLbiAH1yRBJ33U8MwgZ7iN9BPQzc+SDxE03lpF2yD5rS7PYAYipDtAJImPzAW91l9KlWW3DQbxSWSSZIiwERF7z0Cw+K1y8A94XDkTp6H9JRPanAihialJs5WnSZ2BH1WKG3W89qk0o4TYYA6/RaFAwCYs5oI/wCwKz4k6wLCToBzW1xKtLjDs4AGVwaGA7EhosL/AETXwgKSZR/D+FOr1H7NBMuMRt+ZxDR6lZhfKOZWpgGKc1SZ7xzjDLyCxukyBe+6zuzouZeyrjnDchzMe1zQNC+nnFyD4A4kiRqsaVp1MRFJ1MtBmCCQMzYNoOo8lmreLOyOfBl2XFuzrmYag+mJik0VY3c4l+ccx4i2eTWrkF22N4+Dh2AC+UB3icCHCxvPi9edlz83KqHTx8Y6cnRdFVv9S06v/wBd9qhAsNmt/crOxldz3ioQBcCwgWiw+9wtenUBDdCMx1APqtfDmH9mMCTRqvjUgwfzMAeHCORk+a5TieD7qq5mo1aTu06Hz/UFdrw/GZXzFogjof8AC5ntFUl7ByZM85P9j7qYb5D4YxWvhsG59N5YRDSAZ/MXSQ0HyafK3OVlFq6XhcNwzm6kkuHrHi9mge61sI54V3MPhMTqPJWfjHuiToreI0ZJd5T1J/eCfRDYUX0/dPlIX0qTqhgaxc7NCY4h1JxaCSBs4QfbbyWnw7wtdz19hI+R+ZWJUMknndM9gtbWzECN/pdHVxB9APZA4AtD5doPv91t92HNkXmbqa9gowTvAfIrNxmiPwogEcpHyQGIH1Wc/wCxWCP1SCd2qaF2S6IG90m7tEQnWKAUsSNL/CMplu4J5R/dVudfT7Kl7KDNbBTOZdHYeiHuAJDRqSTGm0wVTUZDiBcbeSXsfAXIvRew/GsPRwDqVV+WoKrqlNt/EC3LrpOttVwZpLTxuDYyiw55cR4mj8vITzWfI01Ga8beXUZWM8VR7jqXElaPZiuKddpcYG5OkWmUCxkiSmc2COq0+8wic1TX7c4unXxb6tEyx0RYjQAaG+2q59rVsY3ARSY/MDmBtygws/ulMa/j0NW1g2RFl1umvrv81E0lIhXTMoqrGDHK3qNVdhjYfesn9D7qtzZv7+e6nTEff3zU16KvZDFanzCHyImpDjYz77eajkVz6IweEe24HX/H1lDliuaY+/veU0VFGKMxyGg5JqlQg2JjzKse2dPvoVXUZZVeiG5w7EFwB3Nj56fus3jTw6sQNGgN9rn5mPRW8GrZGVHfygR5ut9cvug+7UXspQQtTDVLRzaf7fUoLukRhtR99P1TfoIjjXeEDmSf0H/k+6Gwour6zZKi1kJ/5IFB8Nd5D6uWXlR5d6T9iI1hUimphwrIYRkvA6rVqM7s5mGW6PHnvCAptymQER+KduQ6beXuqyQtqCHGNCAfcLOxG6veSdJASDWQAWmdyDr6FSQGflThqLNIbT6pd2tpgL7pLukcGJ+7CzQAd2l3aO7pIU0AHTlpkaxGgOqr7r1Wl3Sc0goKAYY5XSWZo0aZjzJBBVOIzuOhjqZK08gSyKTulpjmm7kUzqTuWi2u6CiaK0QAoOlpa8eROYwOQAKrawrS7kKJpLKUFASIWhWr020AwEE6mwPz15bpu5CbuAms0qcMmnZOXDdan4ZvJOMOOSpKRx+ID6bCXtLhAyhkZQBbxTffZBNajjhhyCb8OolFCt0DIVuIzMpgeEh3itBd68kQMOOSX4QckaopmTyUXNJGi1vw/RLuFSGZRbFJ4jdke6TG+q0/w6cUOiCgORTwODa9xz1CwbQC4npZGdymNEbhR9ima+nDnAHMJ1Td27ktQUeicUlUKZjKTpBjfffor60uNw0eQhGmkl3SnH6KZ4pJxSR4pJ+7VFM/uk4oI/u0siEoF3CX4dHZEsqCkU4KqbUUwVmlJByeVCVKUpCYcnzKuU4KUE00pgnVA6SUJFAMngJk6EFCRalCUIUUJBPCSoGhLKnSQgoSSToBk6ZJAJKUkkAkkkyhRJJJpSgdJMkgg6UqMpZlASlNKaUpVBKUyiXKBqhQA4U0kkA6kEkkKIpwkkhCYTpJIQkE6SSoGKcJJICSSSSAiU6SSAdRTpIUZJJJCCSCSSFHSSSQgkxSSQpEpkySgJBIpJIUpeoJJICSSSSAg9UlMkgP/9k=",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/28748-%E2%9A%94%EF%B8%8F%E2%9A%94%EF%B8%8F-maxbarrows-supports-all-combat-styles-customisable-loadout-anti-ban-%E2%9A%94%EF%B8%8F%E2%9A%94%EF%B8%8F/",
+      "storeId": 709,
+      "scriptId": 0.7429944814148048,
+      "jarFile": "jars/MaxBarrows.jar",
+      "optionFile": "options/MaxBarrows.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxBarrows.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxBarrows/3.39/MaxBarrows.json"
+        },
+        {
+          "name": "max-barrows-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxbarrows/3.39/max-barrows-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxbarrows/3.39/max-barrows-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxBarrows-v3.77",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxBarrows-v3.77",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxbrimhavenagility",
+      "description": "Completes Brimhaven Agility arena for up-to 60k xp/h. Earn cool rewards and the best graceful recolored set. Supports alching and passive agility obstacle during downtime.",
+      "version": 1.4,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Brimhaven_Agility_Arena.png/1200px-Brimhaven_Agility_Arena.png?17a54",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30175-maxbrimhavenagility/",
+      "storeId": 835,
+      "scriptId": 0.40338791620525805,
+      "jarFile": "jars/MaxBrimhavenAgility.jar",
+      "optionFile": "options/MaxBrimhavenAgility.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxBrimhavenAgility.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxBrimhavenAgility/3.39/MaxBrimhavenAgility.json"
+        },
+        {
+          "name": "maxbrimhaven-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxbrimhavenagility/3.39/maxbrimhaven-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxbrimhavenagility/3.39/maxbrimhaven-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxBrimhavenAgility-v1.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxBrimhavenAgility-v1.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxforestry",
+      "description": "Fully comprehensive forestry script supporting ALL forestry events. Choose from an extensive list of locations, or set something custom! Can also be used as a stand alone woodcutting script with forestry disabled ",
+      "version": 1.208,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://i.pinimg.com/originals/fb/a9/2d/fba92db3647ef6a041867529b00e7790.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30965-%F0%9F%AA%93%F0%9F%8C%B3%F0%9F%8C%B2maxforestry%F0%9F%8C%B2%F0%9F%8C%B3%F0%9F%AA%93-all-forestry-events-quick-start-anti-ban/",
+      "storeId": 866,
+      "scriptId": 0.8336379584392006,
+      "jarFile": "jars/MaxForestry.jar",
+      "optionFile": "options/MaxForestry.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxForestry.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxForestry/3.39/MaxForestry.json"
+        },
+        {
+          "name": "maxforestry.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxforestry/3.39/maxforestry.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxforestry/3.39/maxforestry.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxForestry-v1.208",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxForestry-v1.208",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxhallowedsepulchreelite",
+      "description": "Completes ALL floors of the Hallowed Sepulchre for an average of 1m gp/h. Will quickly navigate through all obstacles and has configurable looting of reward chests on every floor. Optional high alching while navigating the Sepulchre for passive magic XP.",
+      "version": 4.111,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://i.ytimg.com/vi/BC3wNQudB3o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCP8q-W5nuPY5g3okL_yQE8fYihg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/29564-maxhallowedsepulchrelite/",
+      "storeId": 917,
+      "scriptId": 0.037517396601788766,
+      "jarFile": "jars/MaxHallowedSepulchreElite.jar",
+      "optionFile": "options/MaxHallowedSepulchreElite.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxHallowedSepulchreElite.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxHallowedSepulchreElite/3.37/MaxHallowedSepulchreElite.json"
+        },
+        {
+          "name": "maxsepulcher-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxhallowedsepulchreelite/3.37/maxsepulcher-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxhallowedsepulchreelite/3.37/maxsepulcher-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxHallowedSepulchreElite-v4.111",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxHallowedSepulchreElite-v4.111",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxherbiboar",
+      "description": "Hunts Herbiboar for up to 320k GP/H and 140k Hunter XP/H. Supports Birdhouses and giant seaweed as addons. Also supports Herb sack, Stamina potions, alching/fletching, and uses unique account data to randomize interactions",
+      "version": 5.61,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://preview.redd.it/hunting-herbiboar-art-v0-ijgemsgg0tge1.jpeg?auto=webp&s=f470e71ccf5f5e8f9405fa4815ef8a620cb42ec9",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/28060-maxherbiboar-up-to-500k-gph-anti-ban-herb-sack-support-stamina-support/",
+      "storeId": 635,
+      "scriptId": 0.08864447952322863,
+      "jarFile": "jars/MaxHerbiboar.jar",
+      "optionFile": "options/MaxHerbiboar.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxHerbiboar.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxHerbiboar/3.39/MaxHerbiboar.json"
+        },
+        {
+          "name": "maxherbiboar-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxherbiboar/3.39/maxherbiboar-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxherbiboar/3.39/maxherbiboar-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxHerbiboar-v5.61",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxHerbiboar-v5.61",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxhunterrumours",
+      "description": "Fully fledged rumours script supporting ALL rumours, masters, and locations. Highly customised with blocklists and more!",
+      "version": 1.074,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/The_Burrow.png/800px-The_Burrow.png?41e31",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31867-maxhunterrumours-beta/",
+      "storeId": 932,
+      "scriptId": 0.8343789329265894,
+      "jarFile": "jars/MaxHunterRumours.jar",
+      "optionFile": "options/MaxHunterRumours.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxHunterRumours.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxHunterRumours/3.39/MaxHunterRumours.json"
+        },
+        {
+          "name": "maxrumours-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxhunterrumours/3.39/maxrumours-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxhunterrumours/3.39/maxrumours-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxHunterRumours-v1.074",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxHunterRumours-v1.074",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxmixology",
+      "description": "Efficiently completes the Mastering Mixology with customizable herb and priority resin options. Supports quickstart and GUI saving/Loading",
+      "version": 2.2,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Mastering_Mixology_room.png/640px-Mastering_Mixology_room.png?e26f0",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31228-maxmixology/",
+      "storeId": 887,
+      "scriptId": 0.5175662372928767,
+      "jarFile": "jars/MaxMixology.jar",
+      "optionFile": "options/MaxMixology.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxMixology.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxMixology/3.39/MaxMixology.json"
+        },
+        {
+          "name": "maxmixology-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxmixology/3.39/maxmixology-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxmixology/3.39/maxmixology-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxMixology-v2.2",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxMixology-v2.2",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxsandstoneminer",
+      "description": "Mines sandstone in the Kharidian desert and then puts it in the grinder for buckets of sand. Why do this tedious grind on your ironman when MaxSandstoneMiner can do it for you!  Also supports drop mode if you prefer to powermine for xp",
+      "version": 2.18,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://preview.redd.it/afk-mining-sandstone-for-99-crafting-tip-v0-xrndqxdh1ahb1.png?width=1530&format=png&auto=webp&s=d610a0e602a8cb857c02da0c1dac82a345e6b9da",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/28295-maxsandstoneminer-perfect-for-ironmen-humidify-support-grinder-support-world-hopping-anti-ban/",
+      "storeId": 657,
+      "scriptId": 0.9362252644691487,
+      "jarFile": "jars/MaxSandstoneMiner.jar",
+      "optionFile": "options/MaxSandstoneMiner.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxSandstoneMiner.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxSandstoneMiner/3.39/MaxSandstoneMiner.json"
+        },
+        {
+          "name": "maxsandstone-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxsandstoneminer/3.39/maxsandstone-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxsandstoneminer/3.39/maxsandstone-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxSandstoneMiner-v2.18",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxSandstoneMiner-v2.18",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxseaweedfarmer",
+      "description": "Farms giant seaweed infinitely until you want it to stop.  Can be also used as an addon with MaxHerbiboar and MaxBirdhouses. Perfect script choice for your ironman account. Has optional spore afking to collect spores and run without any further spore input.\r\n",
+      "version": 4.2,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://preview.redd.it/tb66i11ovxi21.png?width=640&crop=smart&auto=webp&s=7a35f2d30e125d3dc43b2293bc8b777a76f9bb09",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/28975-%F0%9F%9A%9C%F0%9F%8C%BFmaxseaweedfarmer-iron-friendly-easy-set-up-anti-ban%F0%9F%8C%BF%F0%9F%9A%9C/",
+      "storeId": 724,
+      "scriptId": 0.9225257076211417,
+      "jarFile": "jars/MaxSeaweedFarmer.jar",
+      "optionFile": "options/MaxSeaweedFarmer.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxSeaweedFarmer.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxSeaweedFarmer/3.39/MaxSeaweedFarmer.json"
+        },
+        {
+          "name": "maxseaweed-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxseaweedfarmer/3.39/maxseaweed-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxseaweedfarmer/3.39/maxseaweed-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxSeaweedFarmer-v4.2",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxSeaweedFarmer-v4.2",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxvarlamoreprayer",
+      "description": "Trains prayer at the Teomat for up-to 1.2m XP/H . Fully customizable and can do everything required for this method including chiseling bones, buying jugs of wine, adding sunfire splinters, blessing bones, and of course sacrificing the bones.",
+      "version": 1.01,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://i.ytimg.com/vi/6SoEhUPhOv0/sddefault.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/40130-%E2%9B%AA%F0%9F%A6%B4-maxvarlamoreprayer-anti-ban-iron-friendly-up-to-12m-xph-quick-start-%F0%9F%A6%B4%E2%9B%AA/",
+      "storeId": 970,
+      "scriptId": 0.23125484246217787,
+      "jarFile": "jars/MaxVarlamorePrayer.jar",
+      "optionFile": "options/MaxVarlamorePrayer.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxVarlamorePrayer.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxVarlamorePrayer/3.37/MaxVarlamorePrayer.json"
+        },
+        {
+          "name": "maxvarlpray.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxvarlamoreprayer/3.37/maxvarlpray.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxvarlamoreprayer/3.37/maxvarlpray.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxVarlamorePrayer-v1.01",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxVarlamorePrayer-v1.01",
+        "assets": []
+      }
+    },
+    {
+      "name": "maxzalcano",
+      "description": "Will complete Zalcano for up-to 1.6m gp/h. An exceptionally consistent money maker, amazing drops for ironmen, guaranteed crystal shards, and a chance at the Smolcano pet.",
+      "version": 1.1,
+      "author": "MaximusPrimo",
+      "imageUrl": "https://i.ytimg.com/vi/h9eIaDtRXJU/sddefault.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30897-maxzalcano/",
+      "storeId": 861,
+      "scriptId": 0.1039780143310578,
+      "jarFile": "jars/MaxZalcano.jar",
+      "optionFile": "options/MaxZalcano.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "MaxZalcano.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/MaxZalcano/3.37/MaxZalcano.json"
+        },
+        {
+          "name": "maxzalcano-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxzalcano/3.37/maxzalcano-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/maxzalcano/3.37/maxzalcano-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "MaxZalcano-v1.1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/MaxZalcano-v1.1",
+        "assets": []
+      }
+    },
+    {
+      "name": "neverbots-general-g-gwd",
+      "description": "Helps General Graardor take a big fat seat. Reap the rewards and repeat.",
+      "version": 10.2,
+      "author": "MeBotNoNever",
+      "imageUrl": "https://c4.wallpaperflare.com/wallpaper/920/417/90/runescape-bandos-fantasy-art-wallpaper-preview.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30940-neverbots-general-g-gwd-only-set-gui-once/",
+      "storeId": 900,
+      "scriptId": 0.4305389298134914,
+      "jarFile": "jars/Neverbots_General_G_GWD.jar",
+      "optionFile": "options/Neverbots_General_G_GWD.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Neverbots_General_G_GWD.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Neverbots'%20General%20G%20(GWD)/3.39/Neverbots_General_G_GWD.json"
+        },
+        {
+          "name": "neverbots-bandos-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-general-g-gwd/3.39/neverbots-bandos-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-general-g-gwd/3.39/neverbots-bandos-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Neverbots--General-G--GWD--v10.2",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Neverbots--General-G--GWD--v10.2",
+        "assets": []
+      }
+    },
+    {
+      "name": "neverbots-kreearra-gwd",
+      "description": "Clips the wings of the great Kree'arra and her minions. Claims loot, pets, and collection log slots as our reward.",
+      "version": 7.8,
+      "author": "MeBotNoNever",
+      "imageUrl": "https://w0.peakpx.com/wallpaper/359/248/HD-wallpaper-kree-arra-runescape-cool-bird-cool-mythical-creatures-runescape-mosters-rs-giant-bird.jpg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31749-neverbots-kreearra-gwd-quickstart/",
+      "storeId": 928,
+      "scriptId": 0.08134476862819562,
+      "jarFile": "jars/Neverbots_Kreearra_GWD.jar",
+      "optionFile": "options/Neverbots_Kreearra_GWD.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Neverbots_Kreearra_GWD.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Neverbots'%20Kree'arra%20(GWD)/3.39/Neverbots_Kreearra_GWD.json"
+        },
+        {
+          "name": "neverbots-kree-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-kreearra-gwd/3.39/neverbots-kree-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-kreearra-gwd/3.39/neverbots-kree-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Neverbots--Kree-arra--GWD--v7.8",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Neverbots--Kree-arra--GWD--v7.8",
+        "assets": []
+      }
+    },
+    {
+      "name": "p2p-master-ai",
+      "description": "Machine Learning 1-click account builder and quester. Does all skills, 120+ resumable quests, SOTE, and fire cape. For players not farmers.",
+      "version": 2.09,
+      "author": "Aeglen",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zPCwnpLqqiveZObs85hKcOqMZ5lfUhN0lg&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/26725-p2p-master-ai-machine-learning-1-click-account-builder/://:test",
+      "storeId": 597,
+      "scriptId": 0.7673104696632884,
+      "jarFile": "jars/P2P_Master_AI.jar",
+      "optionFile": "options/P2P_Master_AI.txt",
+      "botVersion": "3.37",
+      "contributor": "hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "P2P_Master_AI.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/P2P%20Master%20AI/3.37/P2P_Master_AI.json"
+        },
+        {
+          "name": "p2p-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/p2p-master-ai/3.37/p2p-14-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/p2p-master-ai/3.37/p2p-14-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "P2P-Master-AI-v2.09",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/P2P-Master-AI-v2.09",
+        "assets": []
+      }
+    },
+    {
+      "name": "p2p-master-ai",
+      "description": "Machine Learning 1-click account builder and quester. Does all skills, 120+ resumable quests, SOTE, and fire cape. For players not farmers.",
+      "version": 2.11,
+      "author": "Aeglen",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zPCwnpLqqiveZObs85hKcOqMZ5lfUhN0lg&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/26725-p2p-master-ai-machine-learning-1-click-account-builder/://:test",
+      "storeId": 597,
+      "scriptId": 0.8118301776285499,
+      "jarFile": "jars/P2P_Master_AI.jar",
+      "optionFile": "options/P2P_Master_AI.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "P2P_Master_AI.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/P2P%20Master%20AI/3.39/P2P_Master_AI.json"
+        },
+        {
+          "name": "p2p-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/p2p-master-ai/3.39/p2p-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/p2p-master-ai/3.39/p2p-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "P2P-Master-AI-v2.11",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/P2P-Master-AI-v2.11",
+        "assets": []
+      }
+    },
+    {
+      "name": "sub-slayer---advanced",
+      "description": "ALL slayer masters, ALL tasks. Over 210 alternative enemies. Virtual tasks, Wilderness, and superior slayer bosses. Optional prayer flicking. Fully automated - no manual actions needed EVER.",
+      "version": 43.4,
+      "author": "SubCZ",
+      "imageUrl": "https://www.tip.it/runescape/images/gallery/slayer_banner.png",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/24052-sub-slayer-all-masters-all-tasks-200-alternative-enemies-fully-automated-optional-prayer-flicking/://:NOT_DEBUG",
+      "storeId": 525,
+      "scriptId": 0.5102768582799777,
+      "jarFile": "jars/Sub_Slayer__Advanced.jar",
+      "optionFile": "options/Sub_Slayer__Advanced.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "Sub_Slayer__Advanced.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/Sub%20Slayer%20-%20Advanced/3.39/Sub_Slayer__Advanced.json"
+        },
+        {
+          "name": "sub-slayer-advanced-16-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/sub-slayer---advanced/3.39/sub-slayer-advanced-16-09.7z"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/sub-slayer---advanced/3.39/sub-slayer-advanced-16-09.7z"
+      },
+      "githubRelease": {
+        "tagName": "Sub-Slayer---Advanced-v43.4",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/Sub-Slayer---Advanced-v43.4",
+        "assets": []
+      }
+    },
+    {
+      "name": "snowildernessagility",
+      "description": "Level 3 start fully automated wilderness agility script",
+      "version": 1,
+      "author": "snowter",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Wilderness_Agility_Course.png/640px-Wilderness_Agility_Course.png?29d65",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/40651-snowildernessagility-up-to-2m-per-hour-level-3-start-muling-supported/://:-fileName",
+      "storeId": 988,
+      "scriptId": 0.48719491893544253,
+      "jarFile": "jars/snoWildernessAgility.jar",
+      "optionFile": "options/snoWildernessAgility.txt",
+      "botVersion": "3.37",
+      "contributor": "Mc",
+      "botType": "dreambot",
+      "files": [
+        {
+          "name": "snoWildernessAgility.json",
+          "url": "https://projectpillow.s3.eu-central-003.backblazeb2.com/snoWildernessAgility/3.37/snoWildernessAgility.json"
+        },
+        {
+          "name": "snowildernessagility.zip",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/snowildernessagility/3.37/snowildernessagility.zip"
+        }
+      ],
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/snowildernessagility/3.37/snowildernessagility.zip"
+      },
+      "githubRelease": {
+        "tagName": "snoWildernessAgility-v1",
+        "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/snoWildernessAgility-v1",
+        "assets": []
+      }
+    },
+    {
+      "name": "Guester",
       "description": "180+ quests & diaries. Ironman: No items & gold needed. New quests added regularly. 100% In-Progress support, quest-queuing, GCombat logic.",
       "version": 38.43,
       "author": "GZero",
@@ -14,14 +1847,15 @@
       "botVersion": "3.40",
       "contributor": "Hydro",
       "downloads": {
-        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guester/3.40/guester-16-09.7z"
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/Guester/3.40/guester%2018%2009.7z"
       },
       "files": [
         {
-          "name": "guester-16-09.7z",
-          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guester/3.40/guester-16-09.7z"
+          "name": "guester 18 09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/Guester/3.40/guester%2018%2009.7z"
         }
       ]
     }
-  ]
+  ],
+  "lastUpdated": "2025-09-18T17:36:24.584Z"
 }
