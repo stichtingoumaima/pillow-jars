@@ -1878,6 +1878,29 @@
           "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guardians-of-the-rift/3.39/hashgotr-18-09.7z"
         }
       ]
+    },
+    {
+      "name": "aio-gauntlet",
+      "description": "Completes Corrupted and Crystalline Gauntlet efficiently. Easy configuration. Rewards up to 160m gp.",
+      "version": 1.88,
+      "author": "Hashtag",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5Cd5BHRt7R8Iy1rxg_HO5Dx0dFmar46Zfg&s",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/31629-%E2%9D%A4%EF%B8%8F-aio-gauntlet-%E2%9D%A4%EF%B8%8F-corrupted-crystalline-5-to-1-vengeance-efficient-configurable/",
+      "storeId": 916,
+      "scriptId": 2000,
+      "jarFile": "jars/_AIO_Gauntlet.jar",
+      "optionFile": "options/_AIO_Gauntlet.txt",
+      "botVersion": "3.40",
+      "contributor": "Hydro",
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-gauntlet/3.40/aio-gauntlet-14-09.7z"
+      },
+      "files": [
+        {
+          "name": "aio-gauntlet-14-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/aio-gauntlet/3.40/aio-gauntlet-14-09.7z"
+        }
+      ]
     }
   ],
   "lastUpdated": "2025-09-18T17:36:24.584Z"
