@@ -1855,6 +1855,29 @@
           "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-lava-dragon-killer/3.39/nblavadrag-18-09.7z"
         }
       ]
+    },
+    {
+      "name": "guardians-of-the-rift",
+      "description": "Essence pouches with NPC Contact repairing. Rune pouch supported. Completes quest requirements. Highly customizable. UIM supported.",
+      "version": 1.9,
+      "author": "Hashtag",
+      "imageUrl": "https://i.redd.it/oce5r6tkc3jd1.jpeg",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/26968-%E2%9D%A4%EF%B8%8F-guardians-of-the-rift-%E2%9D%A4%EF%B8%8F-pouches-talismans-customizable-uim-questing/",
+      "storeId": 595,
+      "scriptId": 1530,
+      "jarFile": "jars/_Guardians_of_the_Rift.jar",
+      "optionFile": "options/_Guardians_of_the_Rift.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guardians-of-the-rift/3.39/hashgotr-18-09.7z"
+      },
+      "files": [
+        {
+          "name": "hashgotr-18-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/guardians-of-the-rift/3.39/hashgotr-18-09.7z"
+        }
+      ]
     }
   ],
   "lastUpdated": "2025-09-18T17:36:24.584Z"
