@@ -1832,6 +1832,29 @@
         "releaseUrl": "https://github.com/stichtingoumaima/pillow-jars/releases/tag/snoWildernessAgility-v1",
         "assets": []
       }
+    },
+    {
+      "name": "neverbots-lava-dragon-killer",
+      "description": "Script built to train stats, makes money like it's nothing as an added bonus! Trains prayer to 45, completes MA1 for capes, trains at Lava dragons ...",
+      "version": 7.1,
+      "author": "MeBotNoNever",
+      "imageUrl": "https://oldschool.runescape.wiki/images/thumb/Fighting_lava_dragons.png/640px-Fighting_lava_dragons.png?52fdd",
+      "threadUrl": "https://dreambot.org/forums/index.php?/topic/30597-neverbots-lava-dragon-killer-quick-start-compatible-via-file-settings/",
+      "storeId": 852,
+      "scriptId": 1907,
+      "jarFile": "jars/Neverbots_Lava_Dragon_Killer.jar",
+      "optionFile": "options/Neverbots_Lava_Dragon_Killer.txt",
+      "botVersion": "3.39",
+      "contributor": "Hydro",
+      "downloads": {
+        "zip": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-lava-dragon-killer/3.39/nblavadrag-18-09.7z"
+      },
+      "files": [
+        {
+          "name": "nblavadrag-18-09.7z",
+          "url": "https://raw.githubusercontent.com/stichtingoumaima/pillow-jars/main/neverbots-lava-dragon-killer/3.39/nblavadrag-18-09.7z"
+        }
+      ]
     }
   ],
   "lastUpdated": "2025-09-18T17:36:24.584Z"
